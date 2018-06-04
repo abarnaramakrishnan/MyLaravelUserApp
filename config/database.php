@@ -41,10 +41,10 @@ return [
 
         'mysql' => [
             'driver'    => 'mysql',
-            'host'      => '192.168.1.12',
-            'database'  => 'eb_ofos',
-            'username'  => 'eb_ofos',
-            'password'  => 'eb_ofos01',
+            'host'      => '192.168.1.9',
+            'database'  => 'ebrain_tutorial',
+            'username'  => 'ebrain_tutorial',
+            'password'  => 'ebrain_tutorial01',
             'charset'   => 'utf8',
             'collation' => 'utf8_unicode_ci',
             'prefix'    => '',

@@ -18,3 +18,27 @@ Route::get('/', function () {
 Route::get('header1', function () {
     return view('header1');
 });
+Route::get('ManageRoles', function () {
+    return view('ManageRoles');
+});
+
+Route::get('ManageUsers', function () {
+    return view('ManageUsers');
+});
+
+
+Route::get('AddEditUsers', function () {
+    return view('AddEditUsers');
+});
+Route::get('AddEditRoles', function () {
+    return view('AddEditRoles');
+});
+
+
+
+
+
+Route::post('ManageRoles','ManageRolesController@insert');
+Route::get('ManageRoles','ManageRolesController@ShowManageRoles');
+
+Route::get('ManageRoles/{id}','ManageRolesController@EditManageRoles');

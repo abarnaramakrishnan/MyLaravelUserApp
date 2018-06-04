@@ -1,0 +1,112 @@
+.megamenu .form-group {
+    padding: 0 10px;
+  }
+  .default-form.register-form .form-group {
+    margin-bottom: 0;
+  }
+  .default-form .form-group{
+    position:relative;
+    margin-bottom:30px; 
+  }
+  .default-form .comment-form .form-box .form-group{
+    margin-bottom:25px;
+  }
+  .default-form.form-box .row .form-group{
+    padding:0px 0px;  
+  }
+  .default-form .form-group .field-label{
+    display:block;
+    line-height:24px;
+    text-transform:uppercase;
+    margin-bottom:10px;
+    color:#232323;
+    font-weight:500;
+    font-size:13px;
+  }
+  .default-form .form-group .field-label sup{
+    color:#ff0000;
+    font-size:14px;
+  }
+  .cart-section .apply-coupon .form-group {
+    position: relative;
+    float: left;
+    margin-right: 20px;
+  }
+  .cart-section .apply-coupon .form-group input[type="text"] {
+    display: block;
+    line-height: 24px;
+    padding: 9px 15px;
+    border: 1px solid yellow;
+    border-radius: 3px;
+    width: 230px;
+    background: none;
+    font-weight: 500;
+    outline: none;
+    height: 44px;
+  }
+  .cart-section .estimate-form .row .form-group {
+    padding: 0px 7px;
+    margin-bottom: 25px;
+  }
+  .cart-section .apply-coupon .form-group input[type="text"] {
+    border: 2px solid #F7F7F7;
+    text-transform: uppercase;
+    font-size: 14px;
+  }
+  .styled-form .form-group{
+    position:relative;
+    margin-bottom:25px;
+    font-size:18px;
+    color:#222222;  
+  }
+  .checkout-section .styled-form .form-group{
+    position:relative;
+    margin-bottom:20px; 
+  }
+  
+  .styled-form .form-group .check-box{
+    line-height:24px;
+    font-size:15px;
+    font-weight:normal;
+    padding-top:5px;
+    color:#1f1f1f;
+  }
+  
+  .styled-form .form-group .check-box label{
+    position:relative;
+    top:-1px;
+    font-weight:normal;
+    padding:0px;
+    font-size:15px;
+    cursor:pointer;
+  }
+  .styled-form .form-group .thm-btn {
+    line-height: 44px;
+  }
+  .styled-form .form-group .adon-icon{
+    position:absolute;
+    top:50%;
+    margin-top:-10px;
+    right:10px;
+    width:20px;
+    height:20px;
+    line-height:20px;
+    font-size:15px;
+    color:#999999;
+    z-index:2;
+  }
+  
+  .styled-form .form-group .field-label{
+    display:block;
+    color:#1f1f1f;
+    text-transform:capitalize;
+    font-size:16px;
+    margin-bottom:7px;
+    font-weight:400;
+  }
+  .styled-form .form-group .theme-btn{
+    min-width:150px;
+    text-align:center;
+    padding:10px 30px;  
+  }
+  
