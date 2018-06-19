@@ -165,7 +165,7 @@ hr {
     <thead class="table_headline">
  
     <div class="container">
-    <form action="/ManageRoles/" method="POST"  method="POST"  id="formId" name="formId">
+    <form action="/ManageRoles/edit/{id}" method="POST"  id="formId" name="formId">
     <input type = "hidden" name = "_token" value = "<?php echo csrf_token(); ?>"> 
     <input type = "hidden" name = "customerId" value = ""> 
     <div class="row"> 
@@ -180,6 +180,7 @@ hr {
 
 
 <!-- <span onclick="document.getElementById('modelclose').style.display='none'" class="close" title="Close Modal">&times;</span> -->
+
 <div class="modal fade" id="largeShoes" tabindex="-1" role="dialog" aria-labelledby="modalLabelLarge" aria-hidden="true">
 <div class="modal-dialog modal-lg">
 <div class="modal-content">
@@ -190,6 +191,8 @@ hr {
 <span aria-hidden="true" style="margin-right: -599px;">&times;</span>
 </button>
 </div>
+
+
 
 <div class="modal-body ">
         <div><label><b>ROLE NAME</b></label></div>
@@ -257,9 +260,10 @@ hr {
           <td>{{$ids->description}}</td> 
            <td>{{$ids->status}}</td>
 
-          <td><button type="button" class="btn btn-primary grid_button_width" id="div1" onClick="ShowManageRoles({{$ids->id}})">
+          <td><button type="button" class="btn btn-primary grid_button_width"   data-toggle="Mymodel" data-target="#Mymodel" onClick="ShowManageRoles({{$ids->id}});showModal();">
       <i class="icon-check2"></i> EDIT
                         </button></td>
+
               </tr>
               @endforeach
      
@@ -294,6 +298,11 @@ hr {
 </div>
 <script>
 
+function showModal() {
+  $('#Mymodel').modal('show');
+}
+
+
 var modal = document.getElementById('modelclose');
 window.onclick = function(event) {
     if (event.target == modal) {
@@ -304,6 +313,7 @@ window.onclick = function(event) {
 
 function cancelform() {
   location.reload();
+  
 }
 
 
@@ -312,6 +322,7 @@ function ShowManageRoles(id){
           function (data) {
             // cancel1();
             // alert ("data")
+            $('#Mymodel').modal('show');
             console.log(data);
            $('#customerId').val(data[0].id);
             $('#role_name').val(data[0].role_name);

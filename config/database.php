@@ -41,7 +41,7 @@ return [
 
         'mysql' => [
             'driver'    => 'mysql',
-            'host'      => '192.168.1.9',
+            'host'      => '192.168.1.12',
             'database'  => 'ebrain_tutorial',
             'username'  => 'ebrain_tutorial',
             'password'  => 'ebrain_tutorial01',
